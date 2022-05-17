@@ -1,0 +1,12 @@
+Instruciones para replicar los datos obtenidos.
+1. Generación de la transformada cuaternionica
+   Datos: golfsel2.dat
+   Fuente: quat.f (Modificacion de fichero de lectura internamente. Variable obj)
+   Compilacion: gfortran quat.f quat
+   Ejecución: ./quat
+       Parametros: 0 25000 16 (var1: freq inicial var2; freq final (nyquist); Número de días )
+   Salida: Fichero ps.dgt
+   Generación de Representación Gráfica:
+       1.- Fig1: python logaritmicPowerSpectrum.py 
+       2.- Fig2: asintotic.py
+    
