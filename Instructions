@@ -7,6 +7,6 @@ Instruciones para replicar los datos obtenidos.
        Parametros: 0 25000 16 (var1: freq inicial var2; freq final (nyquist); Número de días )
    Salida: Fichero ps.dgt
    Generación de Representación Gráfica:
-       1.- Fig1: python logaritmicPowerSpectrum.py 
+       1.- Fig1: python logaritmicPowerSpectrum.py genera "powerspectrum_18_5.png"
        2.- Fig2: asintotic.py
     
