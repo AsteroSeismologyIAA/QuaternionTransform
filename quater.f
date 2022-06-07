@@ -1,9 +1,12 @@
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 c
 c Objetive: Program to generate quaternion transform power spectrum, from a starting frequency (fmin) until a maximum frequency (fmax). (Output in ps.dgt) 
-c Input Parameters: fmin: starting frequency
+c Input Parameters: 
+c        file: Input file with data column
+c        fmin: starting frequency
 c        fmax: maximum frequency (fmax)
-c        nti: number of days recalculted in based of a power 2
+c        days: number of days recalculted in based of a power 2
+c        sampling: in second
 c Input data file: Radial velocity measurement (excerpt). 1 column. Units: m/s
 c Output data file: ps.dtg
 c        7 columns
@@ -29,14 +32,16 @@ c ------------------
 
         dpi=datan(1.d0)*8
         amedi=0.d0
-        obj='golfsel2.dat'
-        tpas=20.
+c        obj='golfsel2.dat'
+c        tpas=20.
 	tradatg=0.0
 
-	write(*,*) 'fmin,fmax,rti' 
-	
+        write(*,*) 'file, initial frequency, final frequency, days,
+     1  sampling(sec)'
+c	write(*,*) 'fmin,fmax,rti' 
 c       rti max 2616 days of continuos 20 sec golf@soho data
-	read(*,*) anuino,anufio,rti!,fmax!,res
+        read(*,*) obj, anuino, anufio,rti,tpas
+c	read(*,*) anuino,anufio,rti!,fmax!,res
         n=rti*86400d0/(1*tpas)
         nw=log(n*1.)/log(2.)
 
@@ -71,9 +76,9 @@ c-------------------------------------------------
 
 	sig = sqrt(sig/N)
 
-	DO I=1,N
-	  am((I))=(AM(I)-AMEDI)/sig
-	END DO
+c	DO I=1,N
+c	  am((I))=(AM(I)-AMEDI)/sig
+c	END DO
 	
 c       Nyquist
 	fny=1000000./(2*tpas)
