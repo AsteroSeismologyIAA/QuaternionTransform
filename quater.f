@@ -138,10 +138,10 @@ c------------------------------
 
 	  rci=rci*2.d0/n !real clasica
 	  cci=cci*2.d0/n!imag clasica
-          rmi=rmi*2.d0/n !real nueva	  
-	  rci2=rci2*2.d0/n !imag nueva
-	  rci3=rci3*2.d0/n!imag nueva
-	  rci1=rci1*2.d0/n!imag nueva
+          rmi=rmi*4.d0/n !real nueva	  
+	  rci2=rci2*4.d0/n !imag nueva
+	  rci3=rci3*4.d0/n!imag nueva
+	  rci1=rci1*4.d0/n!imag nueva
 
 c         B: the classical power
 	  b=((rci)**2+(cci)**2)
