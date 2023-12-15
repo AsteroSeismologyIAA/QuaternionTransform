@@ -1,6 +1,6 @@
 # Asteroseismology / Quaternion
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/manuparra/asteroseismology/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/manuparra/QuaternionTransform.git/HEAD)
 
 Asteroseismology, that is, the use of the frequency content of a time series caused by variations in brightness or radial velocity of a stellar object, is based on the hypothesis that such a series is harmonic and therefore can be described by a sum of sines and cosines. If this were not the case (e.g. the oscillations of an ellipsoid of revolution) it cannot be guaranteed that the Discrete Fourier transform is the least squares approximation to the time series.
 
