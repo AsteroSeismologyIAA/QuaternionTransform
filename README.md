@@ -7,3 +7,9 @@ Asteroseismology, that is, the use of the frequency content of a time series cau
 This report study the effect of extending the Fourier kernel to a particular quaternion and exploring the impact when it is applied to the best time series that we have (GOLF/SoHO) from the closest star, our Sun. The results are consistent with a notable improvement in the signal-to-noise ratio in the low frequency range. This opens the possibility of detecting the elusive g modes of the Sun in future works.
 
 ![PowerSpec](./docs/powerspectrum_18_5.png)
+
+# How to run this code
+
+- The first option is to run the code from a BinderHub, by clicking here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/manuparra/QuaternionTransform.git/HEAD).
+
+- The second option is to clone this repository, and open a JupyterNotebook in your computer with `pip install jupyter-lab; jupyter lab`. Then access to the notebook `index.pynb`.
