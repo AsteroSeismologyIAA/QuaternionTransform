@@ -10,6 +10,6 @@ This report study the effect of extending the Fourier kernel to a particular qua
 
 # How to run this code
 
-- The first option is to run the code from a BinderHub, by clicking here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/manuparra/QuaternionTransform.git/HEAD).
+- The first option is to run the code from a BinderHub, by clicking here [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/manuparra/QuaternionTransform.git/HEAD).
 
 - The second option is to clone this repository, and open a JupyterNotebook in your computer with `pip install jupyter-lab; jupyter lab`. Then access to the notebook `index.pynb`.
